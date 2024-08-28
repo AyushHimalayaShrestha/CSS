@@ -1,0 +1,14 @@
+h1{
+    color:brown;
+    text-align: center;
+}
+#box{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(86, 156, 218);
+}
+.demo{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(33, 42, 49);
+}

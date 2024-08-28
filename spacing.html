@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacing(Margin and Padding)</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            
+        }
+        .box{
+            width:400px;
+            height: 200px;
+            background-color: rgb(41, 85, 71);
+            color: white;
+            margin:10px;
+            padding: 20px;
+
+        }
+        .demo{
+            width:400px;
+            height: 200px;
+            background-color: rgb(51, 63, 129);
+            color: white;
+            padding: 20px;
+            margin: 40px;
+        }
+        p{
+            text-align: center;
+        }
+        pre{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>margin:space between borders</p>
+    <pre>shorthand properties
+
+    margin:      20px 30px  40px   50px
+                 top  right bottom left
+            
+    margin:      20px  30px       40px
+                 top  left&right bottom
+
+    margin:        20px       30px 
+                 top&bottom left&right
+
+    margin:        20px
+                all side
+
+    margin:      auto(came into center position from horizontal axis i.e. from left and right)
+    </pre>
+    <p>padding: space between content and its borders</p>
+
+    <pre>shorthand property same as margin but there is no auto</pre>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quidem autem doloribus error provident blanditiis quo reiciendis delectus recusandae. Perferendis explicabo excepturi rerum adipisci debitis dolor et consequuntur ab! Nisi?
+        </p>
+    </div>
+    <div class="demo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam eos culpa enim fuga! Provident facilis repellendus, tenetur error aperiam quae beatae rerum similique id nisi itaque eum neque. Minus, voluptatibus?</p>
+    </div>
+</body>
+</html>
