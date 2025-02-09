@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: grid;
+            /* padding: 30px 60px; */
+            /* background-color: rgb(243, 208, 161); */
+            grid-template-rows: repeat(3, 100px) ;
+            /* grid-template-columns:repeat(3,100px) ; */
+            /* grid-template-columns: 30% 50% 20%; */
+            grid-template-columns: 200px 1fr 2fr;
+            grid-auto-rows: 200px;
+            /* row-gap: 10px;
+            column-gap: 10px; */
+            gap: 10px;
+        }
+        .item{
+            border-radius: 5px;
+        }
+
+        .item img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+    
+        .item1{
+            background-color: blue;
+            /* grid-row-start: 1;
+            grid-row-end: 5; */
+            grid-row: 1/3;
+        }
+        .item2{
+            background-color: blueviolet;
+            /* grid-column-start: 2;
+            grid-column-end: 4; */
+            /* grid-column: 2/6;
+            grid-row: 1/4; */
+
+            grid-area: 1/2/5/6 ;
+        }
+        .item3{
+            background-color: rgb(43, 226, 80);
+        }
+        .item4{
+            background-color: rgb(225, 117, 22);
+        }
+        .item5{
+            background-color: rgb(65, 146, 244);
+        }
+        .item6{
+            background-color: rgb(243, 113, 252);
+        }
+        .item7{
+            background-color: rgb(14, 192, 192);
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item item1">
+            <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="">
+        </div>
+        <div class="item item2">
+            <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="">
+        </div>
+        <div class="item item3">
+            <img src="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" alt="">
+        </div>
+        <div class="item item4">
+            <img src="https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=612x612&w=0&k=20&c=UHeb1pGOw6ozr6utsenXHhV19vW6oiPIxDqhKCS2Llk=" alt="">
+        </div>
+        <div class="item item5">
+            <img src="https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg" alt="">
+        </div>
+        <div class="item item6">
+            <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" alt="">
+        </div>
+        <div class="item item7">
+            <img src="https://tinypng.com/images/social/website.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
