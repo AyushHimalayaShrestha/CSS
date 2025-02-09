@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed and sticky</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: rgb(184, 64, 64);
+            height: 100px;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            font-size: 30px;
+        }
+        nav{
+            background-color: rgb(175,184,11);
+            height: 100px;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            font-size: 30px;
+            position:sticky ;
+            top: 0;
+            
+           
+
+        }
+        nav ul { 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            font-size: 20px;
+            
+        }
+        
+        nav ul li{
+            list-style: none;
+            margin-top: 20px;
+
+        }
+        nav ul li a:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        nav ul li a{
+            text-decoration: none;
+        }
+        main{
+            background-color: skyblue;
+            
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            font-size: 30px;
+        
+        }
+        .container{
+            display: flex;
+            flex-wrap:wrap ;
+            justify-content: space-evenly;
+        }
+         .box {
+           height: 300px;
+           width: 400px;
+           margin: 10px;
+           background-color: blueviolet;
+          
+        }
+        footer{
+            background-color: rgb(184, 64, 64);
+            height: 100px;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            font-size: 30px;
+        
+        }
+        .btn{
+            border: none;
+            background-color: rgb(26, 130, 30);
+            color: white;
+            height: 30px;
+            padding:4px 8px;
+            border-radius: 5px;
+            position: fixed;
+            right: 10px;
+            bottom: 5px;
+
+        }
+        .btn:hover{
+            background-color: rgb(29, 192, 217);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header Section
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+
+
+        </div>
+    </main>
+    <footer>
+        Footer Section
+    </footer>
+    <button class="btn">Message Me</button>
+</body>
+</html>
