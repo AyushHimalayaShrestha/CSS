@@ -1,0 +1,27 @@
+CSS
+-> Cascading Style Sheet
+-> used to make web layout
+-> version 3
+
+Types of CSS
+i> Internal CSS
+-> it is written inside the <head> </head> tag of a html page
+Eg : <head>
+      <style>
+	selector{
+	 property : value;
+	 property : value;
+	 }
+	 </style>
+	 </head>
+ii> External CSS
+-> it is written in the external CSS page
+-> the CSS has a extension .css
+-> to link html page with css page do the following
+   inside the <head> tag
+   <link type="text/stylesheet" href="filename.css">
+
+iii> inline css
+-> it is written in the html tag as an attribute
+eg : <p style="property:value;">...</p>
+  	
