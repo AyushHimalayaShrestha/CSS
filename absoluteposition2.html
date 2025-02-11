@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 300px;
+            width: 500px;
+            margin: auto;
+            position: relative;
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+        }
+        .container p{
+
+        }
+        .container button{
+            background-color: rgb(46, 136, 229);
+            font-size: 30px;
+            color: white;
+            border: none;
+            padding: 0 5px;
+            position: absolute;
+            top: 40%;
+            display: none;
+
+        }
+        .container .left{
+            left: 5px;
+        }
+        .container .right{
+            right: 5px;
+        }
+        .container:hover button{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/102728/pexels-photo-102728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+        <button class="left">&lt;</button>
+        <button class="right">&gt;</button>
+    </div>
+</body>
+</html>

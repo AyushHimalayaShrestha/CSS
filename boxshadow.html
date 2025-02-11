@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow</title>
+    <style>
+        .demo-container{
+            height: 40vh;
+            width: 500px;
+            background-color: rgb(20 50 35);
+            box-shadow: -10px -10px 15px rgba(0,0,0,0.8) ,  10px 10px 15px rgba(0,0,0,0.8);
+        }
+        .container{
+            height: 30vh;
+            width: 400px;
+            margin: 15px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            padding: 10px;
+            overflow: hidden;
+           
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 3s;
+        }
+       .container:hover img{
+        transform: scale(1.5);
+       
+       }
+       h1{
+        text-align: center;
+       text-shadow: 5px 10px 5px red;
+       transition: all 2s;
+       }
+       h1:hover{
+        transform: scale(1.4);
+       }
+       h1 .d{
+        color: blue;
+       }
+       h1 .e{
+        color: red;
+       }
+       h1 .n{
+        color: green;
+       }
+    </style>
+</head>
+<body>
+    <div class="demo-container"></div>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/9900531/pexels-photo-9900531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="images">
+    </div>
+    <h1><span class="d">D</span>ursikshya <span class="e">E</span>ducation <span class="n">N</span>etwork</h1>
+</body>
+</html>

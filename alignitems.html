@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+    <style>
+       
+        .demo{
+            background-color: rgb(40,100,50);
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px 0;
+            /* align-items: flex-end; */
+            align-items: center;
+        }
+        .demo>.content{
+            height: 150px;
+            width: 100px;
+            background-color: rgb(49,66,116);
+        }
+        .demo>.item{
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <section class="demo">
+        <div class="content"></div>
+        <div class="content item"></div>
+        <div class="content"></div>
+    </section>
+ 
+</body>
+</html>
