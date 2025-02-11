@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrame</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container{
+        height: 90vh;
+        width: 50vw;
+        background-color: blue;
+        margin: auto;
+      }
+      .container img{
+        margin-top: 80px;
+        margin-left: 130px;
+        animation: sponge-bob 4s ease-in-out infinite;
+       
+      }
+      @keyframes sponge-bob{
+        0%{
+            transform: translateY(20px);
+        }
+       
+        50%{
+            transform: translateX(-50px);
+        }
+        100%{
+            transform:translateY(-20px)
+        }
+
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.freeiconspng.com/thumbs/spongebob-png/spongebob-happy-png-9.png" width="300">
+    </div>
+</body>
+</html>
